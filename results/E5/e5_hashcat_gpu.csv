@@ -1,0 +1,4 @@
+algorithm,hashcat_mode,benchmark_params,kernel,speed_Hps,speed_human,backend,gpu,driver,hashcat_version,test_date,elapsed_ms
+PBKDF2,40024,iterations=999,pure,1395400,1395.4 kH/s,OpenCL 3.0 CUDA 12.8.97,NVIDIA GeForce RTX 5070 Laptop GPU,573.24,v8.0.0,2026-11-25,86.57
+bcrypt,3200,cost=5,pure,24314,24314 H/s,OpenCL 3.0 CUDA 12.8.97,NVIDIA GeForce RTX 5070 Laptop GPU,573.24,v8.0.0,2026-11-25,110.61
+Argon2id,34000,"m=65536 KiB,t=3,p=1",pure,383,383 H/s,OpenCL 3.0 CUDA 12.8.97,NVIDIA GeForce RTX 5070 Laptop GPU,573.24,v8.0.0,2026-11-25,93.00

@@ -1,0 +1,58 @@
+hashcat (v8.0.0) starting in benchmark mode
+
+Benchmarking always uses hand-optimized kernel code.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+
+Initializing bridges. Please be patient...Kernel D:\hashcat\hashcat-8.0.0/OpenCL/m34000-optimized.cl:
+Optimized kernel requested, but not available or not required
+Falling back to pure kernel
+
+Initialized bridgesInitializing backend runtimes. Please be patient...Initialized backend runtimesInitializing backend devices. Please be patient...Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             For more information, see: https://hashcat.net/faq/wrongdriver
+             Falling back to OpenCL runtime.
+
+The NVIDIA RTC library that hashcat compiles its kernels with comes with the CUDA Toolkit.
+Install the Windows build of it from https://developer.nvidia.com/cuda-downloads, choosing
+Windows and the version of it you are on. The GPU driver on its own does not carry it.
+
+Running hashcat inside WSL2 reaches CUDA as well, using the Linux build of hashcat and the
+Linux CUDA Toolkit installed inside it. No NVIDIA GPU driver is installed inside WSL2 itself.
+For all details: https://docs.nvidia.com/cuda/wsl-user-guide/index.html
+
+Failed to initialize the AMD main driver HIP runtime library.
+Could not open libamdhip64.so, nor any libamdhip64.so.N beside it, nor Hygon DTK's libgalaxyhip.so. Install the AMD HIP SDK or Hygon DTK, or on a distribution that splits its packages, the runtime package providing the soname.
+
+Failed to initialize AMD HIP RTC library.
+Could not open libhiprtc.so, nor any libhiprtc.so.N beside it. Install the AMD HIP SDK, or on a distribution that splits its packages, the runtime package providing the soname.
+
+nvmlDeviceGetFanSpeed(): Not Supported
+
+Initialized backend devicesOpenCL API (OpenCL 3.0 CUDA 12.8.97) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #01: NVIDIA GeForce RTX 5070 Laptop GPU, 8064/8150 MB (2037 MB allocatable), 36MCU
+
+OpenCL API (OpenCL 2.1 AMD-APP (3652.0)) - Platform #2 [Advanced Micro Devices, Inc.]
+=====================================================================================
+* Device #02: AMD Radeon(TM) 610M, skipped
+
+Benchmark relevant options:
+===========================
+* --backend-devices=1
+* --backend-devices-virtmulti=1
+* --backend-devices-virthost=1
+* --optimized-kernel-enable
+
+-------------------------------------------------------------
+* Hash-Mode 34000 (Argon2) [m=65536, t=3, p=1] [Kernel: pure]
+-------------------------------------------------------------
+
+Speed.#01........:      383 H/s (93.00ms) @ Accel:113 Loops:4 Thr:32 Vec:1
+
+Started: Wed Nov 25 09:53:54 2026
+Stopped: Wed Nov 25 09:54:04 2026
