@@ -1,2 +1,6 @@
 .venv/
 __pycache__/
+*.png
+*.aux
+*.synctex.gz
+wl.txt

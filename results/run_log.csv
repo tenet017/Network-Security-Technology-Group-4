@@ -1,0 +1,2 @@
+started_utc,command,repeats,memory_repeats,parallel_repeats,guesses_per_worker,wordlist,timing,argv
+2026-11-25T17:54:47+00:00,all,30,8,5,20,built-in 24-word sample (smoke test only),login latency = one verify() call,hashing_benchmark.py all --repeats 30 --memory-repeats 8 --parallel-repeats 5 --guesses-per-worker 20 --out results_full

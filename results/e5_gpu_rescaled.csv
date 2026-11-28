@@ -1,0 +1,12 @@
+scheme,setting,basis,gpu_guesses_per_second,gpu
+PBKDF2,iterations=999,measured,1395400.0,NVIDIA GeForce RTX 5070 Laptop GPU
+PBKDF2,iterations=600000,re-scaled (OWASP minimum),2323.341,NVIDIA GeForce RTX 5070 Laptop GPU
+PBKDF2,iterations=100000,re-scaled (CPU 100 ms calibration),13940.046,NVIDIA GeForce RTX 5070 Laptop GPU
+PBKDF2,iterations=500000,re-scaled (CPU 250 ms calibration),2788.0092,NVIDIA GeForce RTX 5070 Laptop GPU
+PBKDF2,iterations=750000,re-scaled (CPU 500 ms calibration),1858.6728,NVIDIA GeForce RTX 5070 Laptop GPU
+bcrypt,cost=5,measured,24314.0,NVIDIA GeForce RTX 5070 Laptop GPU
+bcrypt,cost=10,re-scaled (OWASP minimum),759.8125,NVIDIA GeForce RTX 5070 Laptop GPU
+bcrypt,cost=10,re-scaled (CPU 100 ms calibration),759.8125,NVIDIA GeForce RTX 5070 Laptop GPU
+bcrypt,cost=12,re-scaled (CPU 250 ms calibration),189.953125,NVIDIA GeForce RTX 5070 Laptop GPU
+bcrypt,cost=13,re-scaled (CPU 500 ms calibration),94.9765625,NVIDIA GeForce RTX 5070 Laptop GPU
+Argon2id,"m=65536 KiB,t=3,p=1",measured,383.0,NVIDIA GeForce RTX 5070 Laptop GPU

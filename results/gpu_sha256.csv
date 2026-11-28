@@ -1,0 +1,2 @@
+scheme,setting,hashcat_mode,gpu_hps_mean,gpu_hps_runs,gpu
+SHA-256 (unsalted),raw benchmark,1400,20235400000.0,20375700000 20249200000 20081300000,RTX 4090 (CUDA)

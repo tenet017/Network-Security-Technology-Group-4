@@ -1,0 +1,4 @@
+scheme,settings,guesses_per_second,rate_repeats,window_s,target_p,required_N,length_A62,length_A96
+PBKDF2,iterations=368000,4.036468466790064,5,31536000,0.5,254588139.1373829,5,5
+bcrypt,cost=12,3.384515720123594,5,31536000,0.5,213468175.4996353,5,5
+Argon2id,memory_kib=119808;time_cost=2;parallelism=1,4.035228141227041,5,31536000,0.5,254509909.3234719,5,5

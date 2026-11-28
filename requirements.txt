@@ -2,3 +2,4 @@ bcrypt>=4.1.0
 argon2-cffi>=23.1.0
 psutil>=5.9.0
 matplotlib>=3.7.0
+nvidia-cuda-nvrtc-cu12  # match driver's CUDA version for hashcat kernels

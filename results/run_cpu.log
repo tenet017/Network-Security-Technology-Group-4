@@ -1,0 +1,79 @@
+WARNING: using the built-in 24-word list; pass --wordlist for the final run
+recorded_utc: 2026-11-25T17:54:47+00:00
+cpu_model: Intel(R) Xeon(R) Silver 4210R CPU @ 2.40GHz
+physical_cores: 10
+logical_cores: 20
+cpu_max_mhz: 3200.0
+total_ram_gib: 62.45
+platform: Linux-6.8.0-142-generic-x86_64-with-glibc2.35
+python_version: 3.10.12
+python_implementation: CPython
+openssl_version: OpenSSL 3.0.2 15 Mar 2022
+bcrypt_version: 5.0.0
+argon2_cffi_version: 25.1.0
+argon2_cffi_bindings_version: 26.2.0
+psutil_version: 7.2.2
+matplotlib_version: 3.10.9
+  PBKDF2 iterations=   10000 verify=     6.99 ms memory=    276.0 KiB
+  PBKDF2 iterations=   25000 verify=    16.50 ms memory=    160.0 KiB
+  PBKDF2 iterations=   50000 verify=    32.98 ms memory=    226.0 KiB
+  PBKDF2 iterations=  100000 verify=    65.60 ms memory=    126.0 KiB
+  PBKDF2 iterations=  250000 verify=   164.22 ms memory=     36.0 KiB
+  PBKDF2 iterations=  500000 verify=   329.62 ms memory=     96.0 KiB
+  PBKDF2 iterations= 1000000 verify=   658.27 ms memory=    168.0 KiB
+  bcrypt cost=       4 verify=     1.41 ms memory=     60.0 KiB
+  bcrypt cost=       6 verify=     4.55 ms memory=      0.0 KiB
+  bcrypt cost=       8 verify=    18.20 ms memory=    188.0 KiB
+  bcrypt cost=       9 verify=    35.73 ms memory=      0.0 KiB
+  bcrypt cost=      10 verify=    72.40 ms memory=      0.0 KiB
+  bcrypt cost=      11 verify=   144.90 ms memory=    160.0 KiB
+  bcrypt cost=      12 verify=   290.94 ms memory=    122.0 KiB
+  bcrypt cost=      13 verify=   581.14 ms memory=     20.0 KiB
+  bcrypt cost=      14 verify=  1157.93 ms memory=      0.0 KiB
+Argon2id memory_kib=    8192 verify=    10.94 ms memory=   8102.0 KiB
+Argon2id memory_kib=   16384 verify=    23.50 ms memory=  16144.0 KiB
+Argon2id memory_kib=   19456 verify=    28.25 ms memory=  19188.0 KiB
+Argon2id memory_kib=   32768 verify=    63.14 ms memory=  32464.0 KiB
+Argon2id memory_kib=   65536 verify=   133.93 ms memory=  65370.0 KiB
+Argon2id memory_kib=  131072 verify=   268.91 ms memory= 130878.0 KiB
+Argon2id memory_kib=  262144 verify=   549.43 ms memory= 261978.0 KiB
+Calibrating PBKDF2 towards 100 ms...
+Calibrating bcrypt towards 100 ms...
+Calibrating Argon2id towards 100 ms...
+Calibrating PBKDF2 towards 250 ms...
+Calibrating bcrypt towards 250 ms...
+Calibrating Argon2id towards 250 ms...
+Calibrating PBKDF2 towards 500 ms...
+Calibrating bcrypt towards 500 ms...
+Calibrating Argon2id towards 500 ms...
+  PBKDF2 workers=1 throughput=    2.97 guesses/s
+  PBKDF2 workers=2 throughput=    5.80 guesses/s
+  PBKDF2 workers=4 throughput=   11.39 guesses/s
+  PBKDF2 workers=8 throughput=   22.66 guesses/s
+  bcrypt workers=1 throughput=    3.42 guesses/s
+  bcrypt workers=2 throughput=    6.57 guesses/s
+  bcrypt workers=4 throughput=   13.00 guesses/s
+  bcrypt workers=8 throughput=   25.92 guesses/s
+Argon2id workers=1 throughput=    3.70 guesses/s
+Argon2id workers=2 throughput=    7.01 guesses/s
+Argon2id workers=4 throughput=   13.16 guesses/s
+Argon2id workers=8 throughput=   22.26 guesses/s
+  PBKDF2 iterations=999                1395400.0 H/s  measured
+  PBKDF2 iterations=600000                2323.3 H/s  re-scaled (OWASP minimum)
+  PBKDF2 iterations=100000               13940.0 H/s  re-scaled (CPU 100 ms calibration)
+  PBKDF2 iterations=500000                2788.0 H/s  re-scaled (CPU 250 ms calibration)
+  PBKDF2 iterations=750000                1858.7 H/s  re-scaled (CPU 500 ms calibration)
+  bcrypt cost=5                          24314.0 H/s  measured
+  bcrypt cost=10                           759.8 H/s  re-scaled (OWASP minimum)
+  bcrypt cost=10                           759.8 H/s  re-scaled (CPU 100 ms calibration)
+  bcrypt cost=12                           190.0 H/s  re-scaled (CPU 250 ms calibration)
+  bcrypt cost=13                            95.0 H/s  re-scaled (CPU 500 ms calibration)
+Argon2id m=65536 KiB,t=3,p=1               383.0 H/s  measured
+salting experiment n=1 done
+salting experiment n=2 done
+salting experiment n=4 done
+salting experiment n=8 done
+salting experiment n=16 done
+  PBKDF2 G=   2.98/s  S(62)=5  S(96)=5
+  bcrypt G=   3.40/s  S(62)=5  S(96)=5
+Argon2id G=   3.68/s  S(62)=5  S(96)=5

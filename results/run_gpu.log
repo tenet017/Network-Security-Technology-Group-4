@@ -1,0 +1,21 @@
+   PBKDF2 100 ms                52159.7 H/s  [52216.0, 52225.0, 52038.0]
+   bcrypt 100 ms                 7426.7 H/s  [7426.0, 7428.0, 7426.0]
+ Argon2id 100 ms                 3728.3 H/s  [3728.0, 3731.0, 3726.0]
+   PBKDF2 250 ms                20856.0 H/s  [20819.0, 20875.0, 20874.0]
+   bcrypt 250 ms                 1858.3 H/s  [1858.0, 1859.0, 1858.0]
+ Argon2id 250 ms                 1122.3 H/s  [1122.0, 1123.0, 1122.0]
+   PBKDF2 500 ms                10423.3 H/s  [10451.0, 10409.0, 10410.0]
+   bcrypt 500 ms                  929.3 H/s  [929.0, 930.0, 929.0]
+ Argon2id 500 ms                  331.0 H/s  [331.0, 331.0, 331.0]
+   PBKDF2 OWASP (600000)        12773.7 H/s  [12770.0, 12783.0, 12768.0]
+   bcrypt OWASP (cost 10)        7426.0 H/s  [7425.0, 7427.0, 7426.0]
+ Argon2id OWASP (19 MiB)         9539.0 H/s  [9543.0, 9538.0, 9536.0]
+wrote /root/group4_pwhash/results_full/gpu/gpu_calibrated.csv
+Argon2id m=   8 MiB t=2        22944.7 H/s
+Argon2id m=  19 MiB t=2         9536.3 H/s
+Argon2id m=  32 MiB t=2         5624.7 H/s
+Argon2id m=  64 MiB t=2         2764.0 H/s
+Argon2id m= 128 MiB t=2          958.7 H/s
+Argon2id m= 256 MiB t=2          260.0 H/s
+Argon2id m= 512 MiB t=2           67.0 H/s
+wrote /root/group4_pwhash/results_full/gpu/gpu_argon2_sweep.csv
